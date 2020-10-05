@@ -1,9 +1,20 @@
 baseurl = "/"
-languageCode = "en-us"
-languageLang = "en"
-title = "Homepage"
+DefaultContentLanguage = "fi"
+
 
 # RSS, categories and tags disabled for an easy start
-# See configuration options for more details: 
+# See configuration options for more details:
 # https://gohugo.io/getting-started/configuration/#toml-configuration
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
+[languages]
+  [languages.fi]
+    contentDir = "content/suomi"
+    languageName = "Suomi"
+    weight = 1
+    title = "Kotisivu"
+  [languages.en]
+    contentDir = "content/english"
+    languageName = "English"
+    weight = 2
+    title="Home"
